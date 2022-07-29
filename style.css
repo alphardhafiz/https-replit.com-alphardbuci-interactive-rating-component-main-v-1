@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #141519;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+}
+
+h1 {
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 375px;
+    height: 375px;
+    background-color: #181f29;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.container .star {
+    background-color: #262f38;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.container .tittle h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.container .rating {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container .rating .rating-point {
+    background-color: #262f38;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: hsl(217, 12%, 63%);
+    border: none;
+    transition: 0.3s;
+}
+
+.container .rating .active {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.container .rating {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.container .rating .rating-point:hover,
+.container .rating .rating-point:hover button {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+
+.container .submit {
+    width: 100%;
+    height: 40px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.container .submit:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* next page */
+.container-review {
+    background-color: #262f38;
+    height: 25px;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraphReview {
+    color: hsl(25, 97%, 53%);
+}
+
+.thank-text {
+    color: #fff;
+}
+
+#subContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+#subContainer img {
+    width: 175px;
+}
+
+#subContainer p {
+    text-align: center;
+}
